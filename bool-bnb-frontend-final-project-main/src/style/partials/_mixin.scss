@@ -1,0 +1,38 @@
+@mixin my_btn_primary($color: #36BFFA,$border: none, $border-bottom: .5px solid #36BFFA, $background: none, $padding: 10px, $border-radius: 10px, $text-decoration: none, $transition: background-color 0.5s ease-in,$colo: 0.4s ease-out) {
+    color: $color;
+    border: $border;
+    border-bottom: $border-bottom;
+    background: $background;
+    padding: $padding;
+    text-decoration: $text-decoration;
+    transition: $transition;
+    color: $colo;
+}
+
+@mixin my_btn_primaryHover ($background: #36BFFA, $color: white,) {
+    background-color: $background;
+    color: $color;
+}
+@mixin my_btn_warning($color: #ffc107,$border: none, $border-bottom: .5px solid #ffc107, $background: none, $padding: 10px, $border-radius: 10px, $text-decoration: none, $transition: background-color 0.5s ease-in,$colo: 0.4s ease-out) {
+    color: $color;
+    border: $border;
+    border-bottom: $border-bottom;
+    background: $background;
+    padding: $padding;
+    text-decoration: $text-decoration;
+    transition: $transition;
+    color: $colo;
+}
+@mixin my_btn_warningHover($back: #ffc107, $color: white) {
+    background-color: $back;
+    color: $color;
+}
+@mixin p_color($color: #98A2B3) {
+    color: $color;
+}
+
+@mixin flex($direction, $justify, $align) {
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

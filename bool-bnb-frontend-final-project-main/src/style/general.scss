@@ -1,0 +1,101 @@
+@use "./partials/mixin" as *;
+@use "./partials/variables" as *;
+@import "bootstrap/scss/bootstrap.scss";
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+form,
+input,
+label,
+h4 {
+    @include p_color;
+}
+
+.ms_icon-sponsored {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 7px;
+    right: 7px;
+    color: $light-blue;
+    // filter: drop-shadow(2px 3px 2px #0dcaf0);
+}
+
+.ms_card {
+    padding: 0.1rem;
+    font-size: .9rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: scale 1s;
+    color: inherit;
+
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .ms_services {
+        color: $light-blue;
+    }
+
+    .card-title {
+        color: black;
+    }
+    
+    &:hover {
+        // scale: 1.1;
+    }
+}
+
+.ms_shadow {
+    box-shadow: 3px 20px 20px 3px #ccc;
+}
+
+.ms_shadow-sponsored {
+    box-shadow: 3px 10px 10px 3px rgba($color: #0dcaf0, $alpha: .4);
+}
+.box-search {
+    border-bottom: 1px solid #0dcaf0; 
+    padding: 2rem;
+}
+.ms_searchbox {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none !important;
+}
+.my-btn-search {
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #0dcaf0;
+    transition: background-color .6s ease-in-out;
+}
+.my-btn-search:hover {
+    color: white;
+    background-color: #0dcaf0;
+}
+.ms_image-details-page-box {
+    margin: 0 auto;
+    img {
+        width: 120px;
+        height: 60px !important;
+        cursor: pointer;
+    }
+}  
+
+.txt-card {
+    color: #717171;
+}
+

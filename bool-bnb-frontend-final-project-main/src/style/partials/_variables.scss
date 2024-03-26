@@ -1,0 +1,45 @@
+$light-blue: #36BFFA;
+$danger: #ffc107;
+
+// customs
+.my_btn_primary{
+    color: #36BFFA;
+    border: none;
+    border-bottom: .5px solid;
+    background: none;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+
+    &:hover {
+        background-color: #36BFFA;
+        color: white;
+    }
+}
+
+.my_btn_warning {
+    color: #ffc107;
+    border: none;
+    border-bottom: .5px solid;
+    background: none;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+   
+
+    &:hover {
+        background-color: #ffc107;
+        color: white;
+    }
+}
+
+.card {
+    border: none;
+    padding: 2rem;
+    text-align: center;
+
+    img {
+        height: 250px;
+        aspect-ratio: 1;
+    }
+}
